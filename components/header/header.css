@@ -1,0 +1,11 @@
+header {
+  padding: 20px;
+  text-align: center;
+  background: var(--secondary);
+  border-bottom: 5px solid var(--primary);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 4px var(--secondary025);
+}
+header img {
+  height: 43px;
+}
