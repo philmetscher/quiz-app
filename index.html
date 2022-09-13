@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzle</title>
+  </head>
+  <body>
+    <header class="header-main"></header>
+    <main>
+      <section class="quiz">
+        <article class="card">
+          <div class="card__question-wrapper">
+            <p class="card__question">
+              What property flips the axes in flexbox?
+            </p>
+            <button class="card__btn" data-js="toggleAnswer">
+              Show Answer
+            </button>
+            <ul class="card__tags">
+              <li class="card__tag">#html</li>
+              <li class="card__tag">#css</li>
+              <li class="card__tag">#flexbox</li>
+            </ul>
+          </div>
+          <div class="card__answer-wrapper" data-js="answer">
+            <p>flex-direction</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__question-wrapper">
+            <p class="card__question">What property hides an element?</p>
+            <button class="card__btn" data-js="toggleAnswer">
+              Show Answer
+            </button>
+            <ul class="card__tags">
+              <li class="card__tag">#html</li>
+              <li class="card__tag">#css</li>
+              <li class="card__tag">#property</li>
+            </ul>
+          </div>
+          <div class="card__answer-wrapper" data-js="answer">
+            <p>display: none</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__question-wrapper">
+            <p class="card__question">
+              What property changes the default color of text?
+            </p>
+            <button class="card__btn" data-js="toggleAnswer">
+              Show Answer
+            </button>
+            <ul class="card__tags">
+              <li class="card__tag">#html</li>
+              <li class="card__tag">#css</li>
+              <li class="card__tag">#property</li>
+            </ul>
+          </div>
+          <div class="card__answer-wrapper" data-js="answer">
+            <p>color: value</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <nav class="nav-main">
+      <ul class="nav__list">
+        <li class="nav__entry nav__entry--active">
+          <a href="#" class="nav__link">
+            <i class="fa-solid fa-house"></i><span>Home</span>
+          </a>
+        </li>
+        <li class="nav__entry">
+          <a href="./bookmarks.html" class="nav__link">
+            <i class="fa-solid fa-bookmark"></i><span>Merkliste</span></a
+          >
+        </li>
+        <li class="nav__entry">
+          <a href="./form.html" class="nav__link">
+            <i class="fa-solid fa-circle-plus"></i><span>neue Frage</span>
+          </a>
+        </li>
+        <li class="nav__entry">
+          <a href="./profile.html" class="nav__link"
+            ><i class="fa-solid fa-user"></i><span>Profile</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
