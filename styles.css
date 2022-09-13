@@ -1,5 +1,6 @@
 @import "./components/font/font.css";
 @import "./components/card/card.css";
+@import "./components/form/form.css";
 
 :root {
   /* colors */

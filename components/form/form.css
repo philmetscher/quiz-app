@@ -1,0 +1,45 @@
+.new-question {
+  width: 100%;
+  margin: 35px auto 0;
+  max-width: 600px;
+}
+
+.new-question .form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.new-question label {
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  transition: all 0.2s linear;
+  z-index: 1;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
+.new-question label small {
+  font-size: 10px;
+}
+
+.new-question textarea,
+.new-question input {
+  padding: 22px 10px;
+  background: var(--input-bg);
+  border: none;
+  width: 100%;
+  line-height: 22px;
+  outline: none;
+  box-shadow: 0 0 4px var(--secondary025);
+}
+
+.new-question textarea:focus + label,
+.new-question input:focus + label {
+  top: -11px;
+  opacity: 1;
+}
