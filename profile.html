@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizzle</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header-main">
+      <img src="./components/images/Quizzle.svg" alt="Quizzle" />
+    </header>
+    <main>
+      <section class="profile-head">
+        <img
+          src="./components/images/pb.jpeg"
+          alt="Phil Metscher profil picture"
+        />
+        <h1>Phil Metscher</h1>
+      </section>
+      <section class="about-me">
+        <h2>About me</h2>
+        <p>
+          Ich habe von <strong>2018 bis Anfang 2022</strong> bei
+          <strong>Rhinos Media</strong> gearbeitet. Bei Rhinos Media wurde ich
+          auf die <strong>Front-End-Entwicklung</strong> spezialisiert. Hierbei
+          setze ich gegebene Designs auf vorhandenen oder neuen Shops um und
+          ändere diese Shops auch nach Kundenwünschen. Außerdem fällt in meinen
+          Arbeitsbereich der First-Level-Support bei dem ich die Kunden supporte
+          und wenn möglich schon versuche eine gemeinsame Lösung zu finden. In
+          letzter Zeit kam es auch immer mehr dazu, dass ich mich an
+          <strong>UI/UX Design</strong> austoben durfte, was ich bisher nur im
+          privaten Rahmen proben konnte.
+        </p>
+      </section>
+      <section class="questions-bookmarks">
+        <button class="questions-bookmarks__btn" aria-label="questions counter">
+          <i class="fa-solid fa-circle-question"></i
+          ><span class="number">01</span>
+        </button>
+        <button class="questions-bookmarks__btn" aria-label="bookmark counter">
+          <i class="fa-solid fa-bookmark"></i><span class="number">50</span>
+        </button>
+      </section>
+      <section class="settings">
+        <h2>Settings</h2>
+        <table class="settings__list">
+          <tr class="setting__entry">
+            <td class="setting__entry__desc">Dark Mode</td>
+            <td class="setting__entry__switch"><span class="switch"></span></td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <nav class="nav-main">
+      <ul class="nav__list">
+        <li class="nav__entry">
+          <a href="./index.html" class="nav__link">
+            <i class="fa-solid fa-house"></i><span>Home</span>
+          </a>
+        </li>
+        <li class="nav__entry">
+          <a href="./bookmarks.html" class="nav__link">
+            <i class="fa-solid fa-bookmark"></i><span>Merkliste</span></a
+          >
+        </li>
+        <li class="nav__entry">
+          <a href="./form.html" class="nav__link">
+            <i class="fa-solid fa-circle-plus"></i><span>neue Frage</span>
+          </a>
+        </li>
+        <li class="nav__entry nav__entry--active">
+          <a href="#" class="nav__link"
+            ><i class="fa-solid fa-user"></i><span>Profile</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
