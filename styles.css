@@ -3,6 +3,7 @@
 @import "./components/navigation/navigation.css";
 @import "./components/card/card.css";
 @import "./components/form/form.css";
+@import "./components/profile/profile.css";
 
 :root {
   /* colors */
