@@ -10,39 +10,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
+    <script
+      type="module"
+      src="./components/bookmark/bookmarks.js"
+      defer
+    ></script>
   </head>
   <body>
     <header class="header-main">
       <img src="./components/images/Quizzle.svg" alt="Quizzle" />
     </header>
     <main>
-      <section class="quiz">
-        <article class="card">
-          <div class="card__question-wrapper">
-            <p class="card__question">
-              What property flips the axes in flexbox?
-            </p>
-            <button class="card__btn" data-js="toggleAnswer">
-              Show Answer
-            </button>
-            <ul class="card__tags">
-              <li class="card__tag">#html</li>
-              <li class="card__tag">#css</li>
-              <li class="card__tag">#flexbox</li>
-            </ul>
-          </div>
-          <div class="card__answer-wrapper" data-js="answer">
-            <p>flex-direction</p>
-          </div>
-          <button
-            class="card__bookmark card__bookmark--active"
-            aria-label="bookmark"
-            data-js="bookmarkBtn"
-          >
-            <i class="fa-solid fa-bookmark"></i>
-          </button>
-        </article>
-      </section>
+      <section class="quiz" data-js="card-container"></section>
     </main>
     <nav class="nav-main">
       <ul class="nav__list">
