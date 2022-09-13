@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quizzle</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
   </head>
   <body>
-    <header class="header-main"></header>
+    <header class="header-main">
+      <img src="./components/images/Quizzle.svg" alt="Quizzle" />
+    </header>
     <main>
       <section class="quiz">
         <article class="card">
@@ -27,6 +34,13 @@
           <div class="card__answer-wrapper" data-js="answer">
             <p>flex-direction</p>
           </div>
+          <button
+            class="card__bookmark card__bookmark--active"
+            aria-label="bookmark"
+            data-js="bookmarkBtn"
+          >
+            <i class="fa-solid fa-bookmark"></i>
+          </button>
         </article>
         <article class="card">
           <div class="card__question-wrapper">
@@ -43,6 +57,13 @@
           <div class="card__answer-wrapper" data-js="answer">
             <p>display: none</p>
           </div>
+          <button
+            class="card__bookmark"
+            aria-label="bookmark"
+            data-js="bookmarkBtn"
+          >
+            <i class="fa-solid fa-bookmark"></i>
+          </button>
         </article>
         <article class="card">
           <div class="card__question-wrapper">
@@ -61,6 +82,13 @@
           <div class="card__answer-wrapper" data-js="answer">
             <p>color: value</p>
           </div>
+          <button
+            class="card__bookmark"
+            aria-label="bookmark"
+            data-js="bookmarkBtn"
+          >
+            <i class="fa-solid fa-bookmark"></i>
+          </button>
         </article>
       </section>
     </main>

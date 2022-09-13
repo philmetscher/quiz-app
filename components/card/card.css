@@ -1,3 +1,11 @@
+.quiz {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+}
+
 .card {
   overflow: hidden;
   box-shadow: 0 0 4px var(--secondary025);
@@ -24,15 +32,15 @@
   min-height: 81px;
 }
 /* Question BTN */
-.card__question_btn {
+.card__btn {
   margin-top: 20px;
 }
-.card__question_btn.btn--hide-answer {
+.card__btn.btn--hide-answer {
   background: var(--secondary);
   color: var(--card-btn-hide-answer-color);
 }
 /* Question Tags */
-.card__question_tags {
+.card__tags {
   display: flex;
   flex-flow: row wrap;
   gap: 10px;
@@ -40,7 +48,7 @@
   list-style-type: none;
   margin-top: 20px;
 }
-.card__question_tag a {
+.card__tag a {
   text-decoration: none;
   color: var(--secondary);
 }
@@ -77,6 +85,8 @@
   border: none;
   background: none;
   font-size: 24px;
+  box-shadow: none;
+  padding: 0;
 }
 .card__bookmark i {
   position: relative;
