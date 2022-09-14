@@ -27,6 +27,11 @@
   font-size: 10px;
 }
 
+.new-question textarea::placeholder,
+.new-question input::placeholder {
+  color: transparent;
+}
+
 .new-question textarea,
 .new-question input {
   padding: 22px 10px;
@@ -39,7 +44,9 @@
 }
 
 .new-question textarea:focus + label,
-.new-question input:focus + label {
+.new-question input:focus + label,
+.new-question textarea:not(:placeholder-shown) + label,
+.new-question input:not(:placeholder-shown) + label {
   top: -11px;
   opacity: 1;
 }
