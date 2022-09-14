@@ -40,6 +40,7 @@ function createCard(question, answer, tags, bookmarked) {
   //collect all tags
   let questionTags;
 
+  console.log(tags);
   if (tags.indexOf(",")) {
     questionTags = tags.split(",");
   } else {
