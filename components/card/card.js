@@ -31,6 +31,7 @@ function createCard(question, answer, tags, bookmarked) {
   const cardQuestion = card.querySelector('[data-js="question"]');
   const cardAnswer = card.querySelector('[data-js="answer"]');
   const cardBookmarkBtn = card.querySelector('[data-js="bookmarkBtn"]');
+  const cardToggleAnswerBtn = card.querySelector('[data-js="toggleAnswer"]');
 
   cardQuestion.textContent = question;
   cardAnswer.getElementsByTagName("p").textContent = answer;
@@ -53,6 +54,11 @@ function createCard(question, answer, tags, bookmarked) {
     //append tags
     card.querySelector("ul.card__tags").append(listItem);
   }
+
+  //add eventlistener to toggle answer
+  cardToggleAnswerBtn.addEventListener("click", () => {
+    card.classList.toggle("answer-shown");
+  });
 
   //check if card is active & add event Listener
   if (bookmarked) {
